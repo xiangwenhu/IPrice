@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>价格计算器</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div id="container" style="width: 1000px;margin: 50px auto">
+        <section>
+            价格<input autofocus pattern="^\d+(\.\d+)?$"  oninput="this.setCustomValidity('')"  required oninvalid="alert('')" placeholder="请输入价格" class="price" type="number" /> 重量(g) <input  placeholder="请输入重量" class="weight" type="number"  /> <label class="price1">0.00</label>元/斤
+            <label class="price2">0.00</label>元/千克  <input/>
+        </section>
+        <section>
+            价格<input pattern="^\d+(\.\d+)?$"  placeholder="请输入价格" class="price" type="number" /> 重量(g) <input placeholder="请输入重量" class="weight" type="number" /> <label class="price1">0.00 </label>元/斤
+            <label class="price2"> 0.00</label>元/千克 <input/>
+        </section>
+        <section>
+            价格<input pattern="^\d+(\.\d+)?$" placeholder="请输入价格" class="price" type="number"> 重量(g) <input placeholder="请输入重量" class="weight" type="number" /> <label class="price1">0.00 </label>元/斤
+            <label class="price2"> 0.00</label>元/千克 <input/>
+        </section>
+        <section>
+            价格<input pattern="^\d+(\.\d+)?$" placeholder="请输入价格" class="price" type="number" /> 重量(g) <input placeholder="请输入重量" class="weight" type="number" /><label class="price1">0.00 </label>元/斤
+            <label class="price2"> 0.00</label>元/千克 <input/>
+        </section>
+        <section>
+            价格<input pattern="^\d+(\.\d+)?$" placeholder="请输入价格" class="price" type="number" /> 重量(g) <input placeholder="请输入重量" class="weight" type="number" /><label class="price1"> 0.00</label>元/斤
+            <label class="price2">0.00</label>元/千克 <input/>
+        </section>
+        <section>
+            价格<input pattern="^\d+(\.\d+)?$" placeholder="请输入价格" class="price" type="number" /> 重量(g) <input placeholder="请输入重量" class="weight" type="number" /><label class="price1">0.00 </label>元/斤
+            <label class="price2"> 0.00</label>元/千克 <input/>    
+        </section>
+
+    </div>
+</body>
+
+<script>
+    let price1, price2;
+    document.querySelector('#container').addEventListener('change', (ev) => {
+        if (ev.target.tagName == 'INPUT') {
+            let sEl = ev.target.parentElement, weEl = sEl.querySelector('.weight')
+            if ((+weEl.value) > 0) {
+                price1 = +(sEl.querySelector('.price').value) / +(weEl.value);
+                sEl.querySelector('.price1').textContent = (price1 * 500).toFixed(2)
+                sEl.querySelector('.price2').textContent = (price1 * 1000).toFixed(2)
+            }
+        }
+        ev.stopImmediatePropagation()
+    })
+
+</script>
+
+</html>
