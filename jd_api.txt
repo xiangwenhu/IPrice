@@ -42,3 +42,8 @@ https://search.jd.com/Search?keyword=开心果&enc=utf-8&suggest=1.his.0.0
 7. 本地存储
     indexedDB?
 10. 临界价格提醒
+
+
+其他参考：
+http://tool.manmanbuy.com/HistoryLowest.aspx <br/>
+http://zuibijia.com/plog.php?st=jd&id=3133859 <br/>
