@@ -38,3 +38,7 @@ https://search.jd.com/Search?keyword=开心果&enc=utf-8&suggest=1.his.0.0
 5. 10*10 = 100 价格从低到高排名，
     （1）链接
     （2）特价说明
+6. 历史价格图，借http://www.xitie.com/
+7. 本地存储
+    indexedDB?
+10. 临界价格提醒
