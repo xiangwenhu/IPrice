@@ -1,0 +1,40 @@
+搜索：
+https://search.jd.com/Search?keyword=开心果&enc=utf-8&suggest=1.his.0.0
+
+
+
+搜索某个品牌
+https://search.jd.com/search?keyword=开心果&enc=utf-8&suggest=1.his.0.0&ev=exbrand_三只松鼠
+
+
+
+产品价格：
+https://p.3.cn/prices/mgets?type=1&skuIds=J_1001881807
+
+产品毛重：
+<ul id="parameter2" class="p-parameter-list">
+    <li title='三只松鼠开心果'>商品名称：三只松鼠开心果</li>
+    <li title='2543188'>商品编号：2543188</li>
+    <li title='225.00g'>商品毛重：225.00g</li>
+    <li title='浙江省'>商品产地：浙江省</li>
+    <li title='带皮'>特性：带皮</li>
+    <li title='国产'>国产/进口：国产</li>
+    <li title='开心果'>分类：开心果</li>
+    <li title='原味'>口味：原味</li>
+    <li title='袋装'>包装单位：袋装</li>
+</ul>
+
+
+简单的单物品查询
+
+1. 通过关键字搜索，
+https://search.jd.com/Search?keyword=开心果&enc=utf-8&suggest=1.his.0.0
+2. 解析页面获得带图标的所有品牌，勾选10个品牌，存到本地，提供编辑优先级别
+3. 按照 关键字 + 品牌 搜索，计算出前10个，
+    （1）. 查询出产品价格和产品毛重
+    （2）. 关于是否可能有特价活动 
+    （3）. 多进程同时进行
+    （4）. 提供查询进度条，
+5. 10*10 = 100 价格从低到高排名，
+    （1）链接
+    （2）特价说明
