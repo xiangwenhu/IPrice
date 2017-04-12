@@ -50,6 +50,13 @@
         ev.stopImmediatePropagation()
     })
 
+    //连续数字
+    String.prototype.continous = function(){
+        return [...this].filter((v,i)=>i!=0  && Math.abs(v - this[i-1]) == 1).length == this.length -1
+    }
+
+  
+
 </script>
 
 </html>

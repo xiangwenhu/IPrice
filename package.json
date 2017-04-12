@@ -1,0 +1,27 @@
+{
+  "name": "iprice",
+  "version": "1.0.0",
+  "description": "<h2>前言</h2>",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "koa": "^2.0.0-alpha.8",
+    "koa-better-body": "^3.0.2",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiangwenhu/IPrice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiangwenhu/IPrice/issues"
+  },
+  "homepage": "https://github.com/xiangwenhu/IPrice#readme"
+}
