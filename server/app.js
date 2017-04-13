@@ -4,9 +4,10 @@ const path = require('path')
 const betterBody  = require('koa-better-body')
 //const routes = require('./routes')
 const app = new Koa()
+const request = require('./utils/request')
 
 //better body
-app.use(betterBody())
+app.use(betterBody()) 
 
 //静态服务器资源
 app.use(koaStatic(path.resolve(__dirname,'../client/dist')))
@@ -47,6 +48,11 @@ app.on('error', (err, ctx) => {
   console.log('error detail:' + err)
   console.log('error stack:' + err.stack)
 })
+
+
+request.get('http://p.3.cn/prices/mgets?type=1&skuIds=J_1001881807').then(data=>console.log(data)).catch(err=>
+  console.log('log:' +err)
+)
 
 
 app.listen(8083)
