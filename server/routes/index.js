@@ -1,4 +1,4 @@
-const fs =  require('../utils/fsex')
+const fs = require('../utils/fsex')
 
 let register = async (app)=>{ 
     let files = await fs.readdir(__dirname)

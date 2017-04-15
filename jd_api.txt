@@ -3,13 +3,20 @@ https://search.jd.com/Search?keyword=开心果&enc=utf-8&suggest=1.his.0.0
 
 
 
-搜索某个品牌
-https://search.jd.com/search?keyword=开心果&enc=utf-8&suggest=1.his.0.0&ev=exbrand_三只松鼠
+搜索某个商场的品牌
+view-source:http://search.jd.com/Search?keyword=%E5%BC%80%E5%BF%83%E6%9E%9C&enc=utf-8&suggest=1.his.0.0
+http://search.jd.com/brand.php?keyword=开心果&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&offset=1&suggest=1.his.0.0
 
 
+某品牌的相关商品的
+https://search.jd.com/search?keyword=%E5%BC%80%E5%BF%83%E6%9E%9C&enc=utf-8&ev=exbrand_%E6%B4%BD%E6%B4%BD%40&uc=0
 
 产品价格：
 https://p.3.cn/prices/mgets?type=1&skuIds=J_1001881807
+
+
+活动促销
+http://cd.jd.com/promotion/v2?callback=jQuery8750903&skuId=1001881807&area=1_72_2799_0&shopId=13850&venderId=14573&cat=1320%2C1583%2C1591&isCanUseDQ=isCanUseDQ-1&isCanUseJQ=isCanUseJQ-1&_=1492227741900
 
 产品毛重：
 <ul id="parameter2" class="p-parameter-list">

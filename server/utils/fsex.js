@@ -4,7 +4,7 @@ module.exports = {
     readdir: dir => new Promise((resolve, reject) => {
         fs.readdir(dir, (err, files) => {
             if (err) {
-                return reject(err)
+                reject(err)
             }
             console.log(files)
             resolve(files)
