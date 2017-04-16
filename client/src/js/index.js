@@ -15,7 +15,7 @@ class Home {
         this.listEl.innerHTML = null
         let htmlStr
         if (data) {
-            this.listEl.innerHTML = data.map(v => `<li><a href = 'https://item.jd.com/${v.id}.html' target='_blank'> ${v.title}|${v.price} |${v.avPrice}</a></li>`).join('')
+            this.listEl.innerHTML = data.map(v => `<li><a href = 'https://item.jd.com/${v.id}.html' target='_blank'> ${v.title}|${v.price} |${v.avPrice}元/kg</a></li>`).join('')
         } else {
             this.listEl.innerHTML = `<li>没有搜索到相关数据</li>`
         }
@@ -28,7 +28,7 @@ class Home {
                 weight = eval(wInfo[0].replace(/kg/ig, '*1000').replace(/g/ig, '').replace('x', '*')),
                 avPrice = (Number.parseFloat(v.price) * 1000 / Number.parseFloat(weight)).toFixed(2)
             return Object.assign({ avPrice }, v)
-        }).sort((p1,p2)=> p1.avPrice >= p2.avPrice)
+        }).sort((p1,p2)=> +p1.avPrice >= +p2.avPrice)
     }
 }
 
