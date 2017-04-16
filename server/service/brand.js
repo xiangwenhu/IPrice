@@ -21,7 +21,7 @@ module.exports = {
         })
         //match(/(\d+(k{0,1})g)(x\d+){0,1}/ig)
         //eval('218kg*2'.replace(/kg/ig,'*1000').replace(/g/ig,'')) 
-        return Array.from($('#J_goodsList  .gl-item')).slice(0, 5).map((v) => {
+        return Array.from($('#J_goodsList  .gl-item')).slice(0, 5).map(v => {
             let el = $(v)
             return {
                 id: v.attribs['data-sku'],

@@ -10,7 +10,7 @@ const app = new Koa()
 app.use(betterBody())
 
 //静态服务器资源
-app.use(koaStatic(path.resolve(__dirname, '../client/dist')))
+app.use(koaStatic(path.resolve(__dirname, '../client')))
 
 //自定义错误处理
 app.use(async (ctx, next) => {
